@@ -117,7 +117,6 @@ while True:
 
     for event in pg.event.get():
         if event.type == pg.QUIT:
-            print('exit')
             pg.quit()
             sys.exit()
         elif event.type == pg.KEYDOWN:
@@ -158,3 +157,5 @@ while True:
 
     pg.display.update()
     timer.tick(30)
+    time.sleep(3)
+    quit()
